@@ -1,0 +1,35 @@
+2019-09-01 00:29:07,135 - ClearTrip -INFO - Login clear trip
+2019-09-01 00:29:20,311 - ClearTrip -INFO - Hotel link click clear trip
+2019-09-14 09:17:07,993 - ClearTrip -INFO - Login clear trip
+2019-09-14 09:17:21,114 - ClearTrip -INFO - Hotel link click clear trip
+2019-09-29 09:32:30,305 - ClearTrip -INFO - Login clear trip
+2019-09-29 09:32:32,920 - ClearTrip -ERROR - clear trip login errororg.openqa.selenium.SessionNotCreatedException: session not created: This version of ChromeDriver only supports Chrome version 75
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-44HAP2U', ip: '192.168.0.103', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '12.0.2'
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+	Ordinal0 [0x00691B43+1448771]
+	Ordinal0 [0x00615A31+940593]
+	Ordinal0 [0x005A2293+467603]
+	Ordinal0 [0x0053F27E+62078]
+	Ordinal0 [0x0053BBBD+48061]
+	Ordinal0 [0x00558D09+167177]
+	Ordinal0 [0x005588DD+166109]
+	Ordinal0 [0x00556FEB+159723]
+	Ordinal0 [0x005409F6+68086]
+	Ordinal0 [0x00541990+72080]
+	Ordinal0 [0x00541929+71977]
+	GetHandleVerifier [0x007D2E8C+1172172]
+	GetHandleVerifier [0x0072FE55+504469]
+	GetHandleVerifier [0x0072FBF0+503856]
+	Ordinal0 [0x0069C9C8+1493448]
+	GetHandleVerifier [0x0073062A+506474]
+	Ordinal0 [0x00627156+1012054]
+	Ordinal0 [0x00626FCF+1011663]
+	Ordinal0 [0x0063135B+1053531]
+	Ordinal0 [0x006314C3+1053891]
+	Ordinal0 [0x006304F5+1049845]
+	BaseThreadInitThunk [0x76086359+25]
+	RtlGetAppContainerNamedObjectPath [0x770E7B74+228]
+	RtlGetAppContainerNamedObjectPath [0x770E7B44+180]
+
