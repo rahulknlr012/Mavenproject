@@ -11,6 +11,8 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
+
 public class webdrivercode {
 	public static WebDriver driver;
 	public static String path=new SimpleDateFormat("ddMMyyyy_HHmmss").format(new java.util.Date());
@@ -20,8 +22,8 @@ public class webdrivercode {
 		//Check if parameter passed from TestNG is 'firefox'
 		if(browser.equalsIgnoreCase("firefox")){
 		//create firefox instance
-			System.setProperty("webdriver.firefox.marionette", "C:\\Users\\HP\\eclipse-workspace\\Mavenproject\\src\\main\\java\\webdriver\\geckodriver.exe");
-			
+			//System.setProperty("webdriver.firefox.marionette", "C:\\Users\\HP\\eclipse-workspace\\Mavenproject\\src\\main\\java\\webdriver\\geckodriver.exe");
+			WebDriverManager.firefoxdriver().setup();
 			driver = new FirefoxDriver();
 			  driver.manage().window().maximize();
 		}
@@ -31,8 +33,9 @@ public class webdrivercode {
 			//create chrome instance
 			ChromeOptions ops = new ChromeOptions();
             ops.addArguments("--disable-notifications");
-            System.setProperty("webdriver.chrome.driver","C:\\Users\\HP\\eclipse-workspace\\Mavenproject\\src\\main\\java\\webdriver\\chromedriver.exe");
+          //  System.setProperty("webdriver.chrome.driver","C:\\Users\\HP\\eclipse-workspace\\Mavenproject\\src\\main\\java\\webdriver\\chromedriver.exe");
 			 // System.setProperty("webdriver.chrome.driver", "./lib/chromedriver");
+            WebDriverManager.chromedriver().setup();
             driver = new ChromeDriver(ops);
             driver.manage().window().maximize();
 			//driver = new ChromeDriver();
