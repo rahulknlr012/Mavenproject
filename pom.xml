@@ -30,7 +30,7 @@
          <source>1.8</source>
                 <target>1.8</target>
           <suiteXmlFiles>
-            <suiteXmlFile>${testng}</suiteXmlFile>
+            <suiteXmlFile>testngFile.xml</suiteXmlFile>
           </suiteXmlFiles>
         </configuration>
       </plugin>
