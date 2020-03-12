@@ -31,7 +31,7 @@ public class guruchrome extends BaseClass {
 		  log.info("Login clear trip");
 	  web.setup("chrome");
 	  driver.get("https://www.cleartrip.com/");
-	 
+	 System.out.println("start tes");
 	  testex.log(LogStatus.PASS,"Go to ClearTrip App");
 	  
 	  
@@ -54,6 +54,7 @@ public class guruchrome extends BaseClass {
 	  //main.clickonflightdealslink();
 	  //main.clickonmanagetriplink();
 	  //main.clickonmobilelink();
+	  System.out.println("start test");
 	  testex.log(LogStatus.PASS," ClearTrip App >> click on hotel link");
 	  
 	  
